@@ -253,15 +253,20 @@ const Contact = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:rajput.rohit20001@gmail.com"
                 className="bg-gradient-primary text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                Email Me Directly
+                📧 Email Me Directly
+              </a>
+              <a
+                href="tel:+919503763985"
+                className="bg-green-500 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                📱 Call Me Now
               </a>
               <a
                 href="/cv.pdf"
                 download
                 className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-primary-500 hover:text-primary-600 transition-all duration-300 transform hover:-translate-y-1">
-                Download My CV
+                📄 Download My CV
               </a>
             </div>
           </div>

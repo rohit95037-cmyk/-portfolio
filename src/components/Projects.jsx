@@ -7,8 +7,10 @@ const Projects = () => {
     {
       id: 1,
       title: "GymFit Pro",
-      description: "Transform Your Fitness Journey - A comprehensive fitness tracking application that helps users track workouts, follow personalized plans, and achieve their fitness goals with an intuitive interface.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
+      description:
+        "Transform Your Fitness Journey - A comprehensive fitness tracking application that helps users track workouts, follow personalized plans, and achieve their fitness goals with an intuitive interface.",
+      image:
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60",
       technologies: ["React", "JavaScript", "Tailwind CSS", "Vercel"],
       category: "frontend",
       liveDemo: "https://gymfit-pro.vercel.app/",
@@ -154,84 +156,6 @@ const Projects = () => {
                   <span>→</span>
                 </a>
               </div>
-            </div>
-          )}
-
-          {/* Filter Buttons - Only show when there are projects */}
-          {projects.length > 0 && (
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              {filters.map((filter) => (
-                <button
-                  key={filter.key}
-                  onClick={() => setActiveFilter(filter.key)}
-                  className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                    activeFilter === filter.key
-                      ? "bg-gradient-primary text-white shadow-lg"
-                      : "bg-white text-gray-700 border border-gray-300 hover:border-primary-500 hover:text-primary-600"
-                  }`}>
-                  {filter.label}
-                </button>
-              ))}
-            </div>
-          )}
-
-          {/* All Projects Grid - Only show when there are projects */}
-          {projects.length > 0 && (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredProjects.map((project) => (
-                <div
-                  key={project.id}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
-                    />
-                    {project.featured && (
-                      <div className="absolute top-4 right-4">
-                        <span className="bg-gradient-primary text-white px-3 py-1 rounded-full text-sm font-medium">
-                          Featured
-                        </span>
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="p-6">
-                    <h4 className="text-xl font-bold text-gray-900 mb-3">
-                      {project.title}
-                    </h4>
-                    <p className="text-gray-600 mb-4">{project.description}</p>
-
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex gap-4">
-                      <a
-                        href={project.liveDemo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 bg-gradient-primary text-white py-2 px-4 rounded-lg text-center font-medium hover:shadow-lg transition-all duration-300">
-                        Live Demo
-                      </a>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 border border-gray-300 text-gray-700 py-2 px-4 rounded-lg text-center font-medium hover:border-primary-500 hover:text-primary-600 transition-all duration-300">
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
           )}
 
