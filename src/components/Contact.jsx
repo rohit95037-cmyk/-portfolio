@@ -263,8 +263,8 @@ const Contact = () => {
                 📱 Call Me Now
               </a>
               <a
-                href="/cv.pdf"
-                download
+                href="/ROHIT.pdf"
+                download="ROHIT_CV.pdf"
                 className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-primary-500 hover:text-primary-600 transition-all duration-300 transform hover:-translate-y-1">
                 📄 Download My CV
               </a>

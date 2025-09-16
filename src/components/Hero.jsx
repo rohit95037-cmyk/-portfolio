@@ -1,5 +1,5 @@
 import React from "react";
-import resumePDF from "../assets/rohit_resume_pdf.pdf";
+import resumePDF from "../assets/ROHIT.pdf";
 
 const Hero = () => {
   const downloadCV = () => {
