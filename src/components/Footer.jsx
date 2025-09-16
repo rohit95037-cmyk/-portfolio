@@ -34,7 +34,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="md:col-span-2">
               <div className="text-3xl font-bold mb-4">
-                <span className="text-gradient">Your Name</span>
+                <span className="text-gradient">Rohit Rajput</span>
               </div>
               <p className="text-gray-400 text-lg leading-relaxed mb-6 max-w-md">
                 Passionate full-stack developer creating beautiful, functional,
@@ -87,7 +87,7 @@ const Footer = () => {
                   <a
                     href="mailto:your.email@example.com"
                     className="text-gray-400 hover:text-white transition-colors duration-200">
-                    your.email@example.com
+                    rajput.rohit20001@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -95,12 +95,12 @@ const Footer = () => {
                   <a
                     href="tel:+15551234567"
                     className="text-gray-400 hover:text-white transition-colors duration-200">
-                    +1 (555) 123-4567
+                    9503763985
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-primary-400">📍</span>
-                  <span className="text-gray-400">Your City, Country</span>
+                  <span className="text-gray-400">Mumbai, India</span>
                 </div>
               </div>
             </div>
@@ -151,12 +151,6 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
-            <div className="mt-4 text-center">
-              <p className="text-gray-500 text-sm">
-                Built with ❤️ using React and Tailwind CSS
-              </p>
-            </div>
           </div>
         </div>
       </div>
@@ -184,4 +178,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
