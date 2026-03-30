@@ -35,7 +35,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-600 mb-4 font-medium">
-              Full Stack Developer & UI/UX Designer
+              Full Stack Developer
             </p>
 
             <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
